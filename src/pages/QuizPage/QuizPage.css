@@ -1,0 +1,29 @@
+.quiz-container{
+    background: rgb(65, 93, 115);
+    height: 100vh;
+    padding: 3%;
+}
+
+.inner-quiz{
+    background: white;
+    height: 100%;
+    /* padding-top: 3%; */
+}
+
+.quiz{
+    max-width: 700px;
+    height: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.evaluate{
+    cursor: pointer;
+    background-color: rgb(77, 216, 77);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px;
+}
