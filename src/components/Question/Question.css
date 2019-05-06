@@ -1,6 +1,5 @@
-.question{
-    /* overflow: visible; */
-    /* margin-bottom: 50px; */
+.question{    
+  user-select: none;
 }
 .question img{
     width: 50px;
@@ -9,8 +8,10 @@
 }
 
 .question .texto{
-    user-select: none;
     float: left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     height: 50px;
     box-sizing: border-box;
     background: #fcce00;

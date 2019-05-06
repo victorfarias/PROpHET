@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Question.css';
-import man from '../../assets/man.svg'
+// import man from '../../assets/man.svg'
 import classNames from 'classnames'
 
 
@@ -27,9 +27,9 @@ class Question extends Component{
         })
         return(
             <div className="question">
-                <img src={man} alt=""/>
+                <img src={this.props.src} alt=""/>
                 <div className="texto">
-                    <span>Sexo Masculino</span>
+                    <span>{this.props.text}</span>
                 </div>
                 <label className={classes}>
                     <input type="checkbox" onChange={this.handleSwitch}/>
