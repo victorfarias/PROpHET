@@ -2,41 +2,30 @@ import React, {Component} from 'react';
 import './Question.css';
 // import man from '../../assets/man.svg'
 import classNames from 'classnames'
+import { connect } from 'react-redux';
 
 
 class Question extends Component{
-    state = {
-        answer: false,
-        disabled: false
-    }
-    handleSwitch = (e) =>{
-        this.setState({
-            answer: e.target.checked,
-            // disabled: false
-        })
-    }
-    handleDisabled = (e) =>{
-        this.setState({
-            disabled: e.target.checked
-        })
-    }
     render(){
+        const {question, checked, disabled, changeChecked, changeDisabled} = this.props;
         let classes = classNames({
             switch: true,
-            disabled: this.state.disabled
-        })
+            // checked: true,
+            disabled: disabled
+        });
+        
         return(
             <div className="question">
                 <img src={this.props.src} alt=""/>
                 <div className="texto">
                     <span>{this.props.text}</span>
                 </div>
-                <label className={classes}>
-                    <input type="checkbox" onChange={this.handleSwitch}/>
+                <label className={classes} onChange={()=>changeChecked(question)}>
+                    <input type="checkbox" defaultChecked={checked} />
                     <span className="slider"></span>
                 </label>                
-                <label className="container">Não disponível
-                    <input type="checkbox" onChange={this.handleDisabled} />
+                <label className="container" onChange={()=>changeDisabled(question)}>Não disponível
+                    <input type="checkbox" defaultChecked={disabled} />
                     <span className="checkmark"></span>
                 </label>
             </div>
@@ -44,4 +33,18 @@ class Question extends Component{
     }
 }
 
-export default Question;
+const mapStateToProps = (state, props) =>{
+    return{
+        checked: state[props.question].checked,
+        disabled: state[props.question].disabled,
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return({
+        changeChecked: (question) => {dispatch({type: 'CHANGE_CHECKED', question})},
+        changeDisabled: (question) => {dispatch({type: 'CHANGE_DISABLED', question})},
+    })
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Question);

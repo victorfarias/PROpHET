@@ -1,5 +1,5 @@
 .question{    
-  user-select: none;
+    user-select: none;
 }
 .question img{
     width: 50px;
@@ -25,11 +25,11 @@
 /* Switch */
 
 .switch {
-  position: relative;
-  display: inline-block;
-  margin-top: 8px;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input { 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Question from '../../components/Question/Question'
+import { Link } from 'react-router-dom';
 import './QuizPage.css'
 
 import man from '../../assets/man.svg'
@@ -14,18 +15,16 @@ class QuizPage extends Component{
             <div className="quiz-container">
                 <div className="inner-quiz">
                     <div className="quiz">
-                        <Question src={man} text="Sexo Masculino"/>
-                        <Question src={icecream} text="Glicemia Admissional &ge; 180mg/dL"/>
-                        <Question src={mind} text="ASPECTS admissional &le; 7"/>
-                        <Question src={mind} text="Sinal de ACM hiperdensa"/>
-                        <Question src={brain} text="Microangiopatia"/>
-                        <Question src={brain} text="Síndrome Lacunar"/>
-                        <Question src={heart} text="Etiologia Cárdio-aórtica"/>
-                        <div className="evaluate">Avaliar</div>
-                    </div>
-                
-                </div>
-                
+                        <Question question="male" src={man} text="Sexo Masculino"/>
+                        <Question question="glycemia" src={icecream} text="Glicemia Admissional &ge; 180mg/dL"/>
+                        <Question question="aspects" src={mind} text="ASPECTS admissional &le; 7"/>
+                        <Question question="acm" src={mind} text="Sinal de ACM hiperdensa"/>
+                        <Question question="microangiopathy" src={brain} text="Microangiopatia"/>
+                        <Question question="lacunar_syndrome" src={brain} text="Síndrome Lacunar"/>
+                        <Question question="aortic_insufficiency" src={heart} text="Etiologia Cárdio-aórtica"/>
+                        <Link className="evaluate" to='/result'>Evaluate</Link>
+                    </div>                
+                </div>                
             </div>                
         )
     }

@@ -24,6 +24,8 @@
     background-color: rgb(77, 216, 77);
     padding: 20px;
     text-align: center;
+    text-decoration: none;
+    color: black;
     border-radius: 20px;
     box-shadow: 4px 4px 4px;
 }

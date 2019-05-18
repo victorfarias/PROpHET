@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from '../../assets/logo.png';
 import splash from '../../assets/splash.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './HomePage.css'
 
 class HomePage extends Component{
