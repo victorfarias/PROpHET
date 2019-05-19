@@ -3,6 +3,7 @@ import './Question.css';
 // import man from '../../assets/man.svg'
 import classNames from 'classnames'
 import { connect } from 'react-redux';
+import { FormattedMessage } from "react-intl";
 
 
 class Question extends Component{
@@ -18,7 +19,8 @@ class Question extends Component{
             <div className="question">
                 <img src={this.props.src} alt=""/>
                 <div className="texto">
-                    <span>{this.props.text}</span>
+                    {/* <span>{this.props.text}</span> */}
+                    <FormattedMessage id={question}></FormattedMessage>
                 </div>
                 <label className={classes} onChange={()=>changeChecked(question)}>
                     <input type="checkbox" defaultChecked={checked} />
@@ -35,8 +37,8 @@ class Question extends Component{
 
 const mapStateToProps = (state, props) =>{
     return{
-        checked: state[props.question].checked,
-        disabled: state[props.question].disabled,
+        checked: state.answers[props.question].checked,
+        disabled: state.answers[props.question].disabled,
     }
 }
 
