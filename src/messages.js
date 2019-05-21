@@ -3,7 +3,7 @@ export default {
         'male':'Male gender',
         'glycemia':'Admission hyperglycemia \u2265 180 mg/dL', 
         'aspects':'ASPECTS on admission (CT Scan)', 
-        'acm':'Sinal de ACM hiperdensa',
+        'acm':'Hyperdense MCA sign',
         'microangiopathy':'Leukoaraiosis', 
         'lacunar_syndrome':'Lacunar syndrome', 
         'aortic_insufficiency':'Cardio-aortic embolism',
