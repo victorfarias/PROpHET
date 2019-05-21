@@ -29,17 +29,17 @@ class ResultPage extends Component{
                             <div className="panel large green">
                                 <FormattedMessage id="likelihood"></FormattedMessage>                                
                             </div>
-                            <div className="result-value red">{probability.toFixed(3)}</div>
+                            <div className="result-value red">{(probability*100).toFixed(0)}%</div>
                         </div>
-                        {score >= 6 &&
+                        {score >= 3 &&
                             <div className="alert">
-                                <b>Alerta: Pontuação Total maior que 6 </b> <br/>
-                                Sensibilidade: 87.4% <br/> 
-                                Especificidade 69% <br/>
-                                Sensibilidade para TH sintomática: 93.2% <br/>
-                                Especificidade para TH sintomática: 68% <br/>
-                                Odds Ratio  14.5 <br/>
-                                Odds Ratio para TH sintomática: 29
+                                <b>Alerta: Pontuação Total maior que 3 </b> <br/>
+                                Sensibilidade: 74.7% <br/> 
+                                Especificidade 76.5% <br/>
+                                Sensibilidade para TH Sintomática: 80% <br/>
+                                Especificidade para TH Sintomática: 77% <br/>
+                                Odss Ratio para TH Geral: 9.6 (95% CI 5.69-16.25, p &lt; 0.001) <br/>
+                                OR para TH sintomática: 12.7 (95% CI 6-27.6, p &lt; 0.001)
                             </div>
                         }                        
                     </div>                    
@@ -59,10 +59,10 @@ const mapStateToProps = (state) =>{
             }            
             return obj;
         }, {});
-    let score = 3*questions_score.male + 4*questions_score.glycemia +
-        5*questions_score.aspects + 2*questions_score.acm + 
-        2*questions_score.microangiopathy -8*questions_score.lacunar_syndrome +
-        4*questions_score.aortic_insufficiency;
+    let score = 1*questions_score.male + 1*questions_score.glycemia +
+        2*questions_score.aspects + 2*questions_score.acm + 
+        1*questions_score.microangiopathy -2*questions_score.lacunar_syndrome +
+        1*questions_score.aortic_insufficiency;
 
     let questions_prob = state.questions.reduce(
         (obj, question) => {
@@ -85,7 +85,7 @@ const mapStateToProps = (state) =>{
     return{
         probability,
         score,
-        odds: score*1.38,
+        odds: (score+2)*1.38,
     }
 }
 export default connect(mapStateToProps)(ResultPage);

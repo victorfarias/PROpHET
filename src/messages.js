@@ -1,7 +1,7 @@
 export default {
     en:{
         'male':'Male gender',
-        'glycemia':'Admission hyperglycemia \\u2265 180 mg/dL', 
+        'glycemia':'Admission hyperglycemia \u2265 180 mg/dL', 
         'aspects':'ASPECTS on admission (CT Scan)', 
         'acm':'Sinal de ACM hiperdensa',
         'microangiopathy':'Leukoaraiosis', 
@@ -14,8 +14,8 @@ export default {
     },
     pt:{
         'male':'Sexo Masculino',
-        'glycemia':'Glicemia Admissional \\u2265 180mg/dL',
-        'aspects':'ASPECTS admissional &le; 7',
+        'glycemia':'Glicemia Admissional \u2265 180mg/dL',
+        'aspects':'ASPECTS admissional',
         'acm':'Sinal de ACM hiperdensa',
         'microangiopathy':'Microangiopatia',
         'lacunar_syndrome':'Síndrome Lacunar',
@@ -27,7 +27,7 @@ export default {
     },
     es:{
         'male':'Sexo Masculino',
-        'glycemia':'Hiperglucemia de ingreso \\u2265 180mg/dL',
+        'glycemia':'Hiperglucemia de ingreso \u2265 180mg/dL',
         'aspects':'ASPECTS al ingresso',
         'acm':'Sinal de ACM hiperdensa',
         'microangiopathy':'Leucoaraiosis',

@@ -15,13 +15,13 @@ class QuizPage extends Component{
             <div className="quiz-container">
                 <div className="inner-quiz">
                     <div className="quiz">
-                        <Question question="male" src={man} text="Sexo Masculino"/>
-                        <Question question="glycemia" src={icecream} text="Glicemia Admissional &ge; 180mg/dL"/>
-                        <Question question="aspects" src={mind} text="ASPECTS admissional &le; 7"/>
-                        <Question question="acm" src={mind} text="Sinal de ACM hiperdensa"/>
-                        <Question question="microangiopathy" src={brain} text="Microangiopatia"/>
-                        <Question question="lacunar_syndrome" src={brain} text="Síndrome Lacunar"/>
-                        <Question question="aortic_insufficiency" src={heart} text="Etiologia Cárdio-aórtica"/>
+                        <Question question="male" src={man}/>
+                        <Question question="glycemia" src={icecream}/>
+                        <Question question="aspects" src={mind}/>
+                        <Question question="acm" src={mind}/>
+                        <Question question="microangiopathy" src={brain}/>
+                        <Question question="lacunar_syndrome" src={brain}/>
+                        <Question question="aortic_insufficiency" src={heart}/>
                         <Link className="evaluate" to='/result'>Evaluate</Link>
                     </div>                
                 </div>                
