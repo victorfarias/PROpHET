@@ -38,8 +38,6 @@ class ResultPage extends Component{
                                 Especificidade 76.5% <br/>
                                 Sensibilidade para TH Sintomática: 80% <br/>
                                 Especificidade para TH Sintomática: 77% <br/>
-                                Odss Ratio para TH Geral: 9.6 (95% CI 5.69-16.25, p &lt; 0.001) <br/>
-                                OR para TH sintomática: 12.7 (95% CI 6-27.6, p &lt; 0.001)
                             </div>
                         }                        
                     </div>                    
