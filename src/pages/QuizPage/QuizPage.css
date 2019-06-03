@@ -1,7 +1,7 @@
 .quiz-container{
     background: rgb(65, 93, 115);
-    height: 100vh;
-    padding: 3%;
+    /* height: 100vh; */
+    padding: 0% 3% 3% 3%;
 }
 
 .inner-quiz{
@@ -13,6 +13,7 @@
 .quiz{
     max-width: 700px;
     height: 100%;
+    padding: 0px 20px;
     margin:auto;
     display: flex;
     flex-direction: column;

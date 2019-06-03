@@ -1,98 +1,15 @@
-.home-container{
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.logo{
+    text-align: center;
 }
 
-.splash-background{
-    background: rgb(65, 93, 115);
-    position: fixed;
-    height: 100vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.splash-background img{
-    height: 100%;
-    display: block;
-}
-
-.circle{
-    background: white;
-    position: fixed;
-    left: 50%;
-    /* top: 50%; */
-    transform: translate(calc(-50% - 5px), -5%);
-    width: 110vh;
-    height: 110vh;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
-    box-sizing: border-box;
-    padding: 10%;
-}
-
-.menu{  
+.logo img{
+    /* display: block; */
+    /* margin: auto; */
     width: 100%;
-    height: 100%;
+    max-width: 550px;
+    /* height: auto; */
 }
 
-.row1{
-    text-align: center;
-    height: 70%;
-}
-.row1 .logo{
-    height: 100%;
-}
-.row2{
-    height: 15%;    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.row3{
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.button{
-    /* font-size: 1.2em; */
-    /* font-size: calc(12px + 1vw); */    
-    font-size: 18px; 
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    padding: 2% 0;
-    width: 140px;
-    text-align: center;
-    box-shadow: 2px 2px 2px black; 
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
-.button.english{
-    background-color: #4573C9;
-}
-
-.button.portuguese{
-    background-color: #FFC00B;
-}
-
-.button.espanol{
-    background-color: #F3823B;
-}
-
-.button.references{
-    background-color: #75B452;
-}
-
-@media (max-width: 900px){
-    .button{
-        font-size: 10px;
-    }
-}
+/* .buttons-lang button{ */
+    /* width: 200px; */
+/* } */

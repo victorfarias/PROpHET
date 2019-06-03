@@ -8,11 +8,13 @@ import icecream from '../../assets/icecream.svg'
 import mind from '../../assets/mind.svg'
 import brain from '../../assets/brain.svg'
 import heart from '../../assets/heart.svg'
+import NavBar from '../../components/NavBar/NavBar';
 
 class QuizPage extends Component{
     render(){
         return (
             <div className="quiz-container">
+                <NavBar></NavBar>
                 <div className="inner-quiz">
                     <div className="quiz">
                         <Question question="male" src={man}/>
@@ -22,7 +24,7 @@ class QuizPage extends Component{
                         <Question question="microangiopathy" src={brain}/>
                         <Question question="lacunar_syndrome" src={brain}/>
                         <Question question="aortic_insufficiency" src={heart}/>
-                        <Link className="evaluate" to='/result'>Evaluate</Link>
+                        <Link className="evaluate my-5" to='/result'>Evaluate</Link>
                     </div>                
                 </div>                
             </div>                
