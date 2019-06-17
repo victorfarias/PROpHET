@@ -15,13 +15,13 @@ function HomePage(props) {
 
     return (
         <div>
-            <NavBar />
+            <NavBar activePage="home" />
             <div className="logo my-5">
                 <img src={logo} alt="" />
             </div>
 
             <div className="container buttons-lang">
-                <div class="row">
+                <div className="row">
                     <div className="col-md">
                         <button
                             onClick={() => {

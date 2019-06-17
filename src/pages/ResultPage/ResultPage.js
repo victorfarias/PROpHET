@@ -1,45 +1,45 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
 import './ResultPage.css'
+import NavBar from '../../components/NavBar/NavBar';
+import { Link } from 'react-router-dom';
 
 class ResultPage extends Component{
     render(){
         const { probability, score, odds } = this.props;
         return(            
             <div className="result-container">
+                <NavBar></NavBar>
                 <div className="result-inner-container">
                     <div className="results">
-                        <div className="panel large">
+                        <div className="panel large centralized my-5">
                             <FormattedMessage id='result'></FormattedMessage>
-                            </div>
-                        <div className="result-item">
+                        </div>
+                        <div className="result-item my-5">
                             <div className="panel large">
                                 <FormattedMessage id="total"></FormattedMessage>
                             </div>
                             <div className="result-value">{score}</div>
                         </div>
-                        <div className="result-item">
+                        <div className="result-item my-5">
                             <div className="panel large">
                                 <FormattedMessage id="odd"></FormattedMessage>
                             </div>
-                            <div className="result-value">{odds}</div>
+                            <div className="result-value">{odds.toFixed(2)}</div>
                         </div>
-                        <div className="result-item">
+                        <div className="result-item my-5">
                             <div className="panel large green">
                                 <FormattedMessage id="likelihood"></FormattedMessage>                                
                             </div>
                             <div className="result-value red">{(probability*100).toFixed(0)}%</div>
                         </div>
                         {score >= 3 &&
-                            <div className="alert">
-                                <b>Alerta: Pontuação Total maior que 3 </b> <br/>
-                                Sensibilidade: 74.7% <br/> 
-                                Especificidade 76.5% <br/>
-                                Sensibilidade para TH Sintomática: 80% <br/>
-                                Especificidade para TH Sintomática: 77% <br/>
+                            <div class="alert">
+                                <FormattedHTMLMessage id="result.alert"></FormattedHTMLMessage>
                             </div>
-                        }                        
+                        }      
+                        <Link to="/" type="button" className="btn btn-primary btn-lg btn-block btn-primary">Back</Link>                  
                     </div>                    
                 </div>
             </div>

@@ -1,16 +1,21 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import "./NavBar.css";
 
 class NavBar extends Component {
     render = () => {
+        let activePage = this.props.activePage ? this.props.activePage : "";
+        console.log(activePage);
         return (
-            <nav class="navbar navbar-expand-lg navbar-dark main-nav py-3">
+            <nav className="navbar navbar-expand-lg navbar-dark main-nav py-3">
                 <div className="container">
-                    <a class="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         PROpHET
-                    </a>
+                    </Link>
+
                     <button
-                        class="navbar-toggler"
+                        className="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarTogglerDemo02"
@@ -18,26 +23,30 @@ class NavBar extends Component {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon" />
+                        <span className="navbar-toggler-icon" />
                     </button>
 
                     <div
-                        class="collapse navbar-collapse"
+                        className="collapse navbar-collapse"
                         id="navbarTogglerDemo02"
                     >
-                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">
-                                    Home <span class="sr-only">(current)</span>
-                                </a>
+                        <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
+                            <li
+                                className={
+                                    "nav-item " + ((activePage == "home") ? "active" : "")
+                                }
+                            >
+                                <Link className="nav-link" to="/">
+                                    Home
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
                                     Link
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
                                     Publications
                                 </a>
                             </li>

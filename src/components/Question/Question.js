@@ -1,12 +1,26 @@
 import React, { Component } from "react";
 import "./Question.css";
-// import man from '../../assets/man.svg'
 import classNames from "classnames";
 import { connect } from "react-redux";
-// import { FormattedMessage } from "react-intl";
+import { FormattedHTMLMessage } from "react-intl";
 import messages from "../../messages";
+import { Modal, Button } from "react-bootstrap";
 
 class Question extends Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+            showModal: false
+        };
+    }
+    openModal = () => {
+        console.log("open");
+        this.setState({ showModal: true });
+    };
+    closeModal = () => {
+        this.setState({ showModal: false });
+    };
     render() {
         const {
             question,
@@ -25,7 +39,7 @@ class Question extends Component {
         return (
             <div className="my-4 question">
                 <img src={this.props.src} alt="" />
-                <div className="texto">
+                <div onClick={this.openModal} className="texto">
                     <span>{messages[lang][question]}</span>
                     {/* <FormattedMessage id={question}></FormattedMessage> */}
                 </div>
@@ -47,6 +61,19 @@ class Question extends Component {
                         <span className="checkmark" />
                     </label>
                 </div>
+                <Modal size="lg" show={this.state.showModal} onHide={this.closeModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{messages[lang][question]}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <FormattedHTMLMessage id={question+".description"}></FormattedHTMLMessage>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={this.closeModal}>
+                            Close
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
         );
     }
