@@ -15,7 +15,6 @@ class Question extends Component {
         };
     }
     openModal = () => {
-        console.log("open");
         this.setState({ showModal: true });
     };
     closeModal = () => {
@@ -24,15 +23,15 @@ class Question extends Component {
     render() {
         const {
             question,
-            checked,
+            value,
             disabled,
-            changeChecked,
+            changeValue,
             changeDisabled,
-            lang
+            lang,
+            number = false
         } = this.props;
         let classes = classNames({
             switch: true,
-            // checked: true,
             disabled: disabled
         });
 
@@ -41,16 +40,34 @@ class Question extends Component {
                 <img src={this.props.src} alt="" />
                 <div onClick={this.openModal} className="texto">
                     <span>{messages[lang][question]}</span>
-                    {/* <FormattedMessage id={question}></FormattedMessage> */}
                 </div>
                 <div className="group">
-                    <label
-                        className={classes}
-                        onChange={() => changeChecked(question)}
-                    >
-                        <input type="checkbox" defaultChecked={checked} />
-                        <span className="slider" />
-                    </label>
+                    {!number && (
+                        <label className={classes}>
+                            <input
+                                type="checkbox"
+                                defaultChecked={value}
+                                onChange={evt =>
+                                    changeValue(question, value == 0 ? 1 : 0)
+                                }
+                            />
+                            <span className="slider" />
+                        </label>
+                    )}
+                    {number && (
+                        <input
+                            type="number"
+                            inputmode="numeric"
+                            pattern="[0-9]*"
+                            className="number-input"
+                            size="3"
+                            required
+                            disabled={disabled}
+                            onChange={evt =>
+                                changeValue(question, +evt.target.value)
+                            }
+                        />
+                    )}
                     <label
                         className="checkmark-container"
                         onChange={() => changeDisabled(question)}
@@ -61,12 +78,16 @@ class Question extends Component {
                         <span className="checkmark" />
                     </label>
                 </div>
-                <Modal size="lg" show={this.state.showModal} onHide={this.closeModal}>
+                <Modal
+                    size="lg"
+                    show={this.state.showModal}
+                    onHide={this.closeModal}
+                >
                     <Modal.Header closeButton>
                         <Modal.Title>{messages[lang][question]}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <FormattedHTMLMessage id={question+".description"}></FormattedHTMLMessage>
+                        <FormattedHTMLMessage id={question + ".description"} />
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.closeModal}>
@@ -81,7 +102,7 @@ class Question extends Component {
 
 const mapStateToProps = (state, props) => {
     return {
-        checked: state.answers[props.question].checked,
+        value: state.answers[props.question].value,
         disabled: state.answers[props.question].disabled,
         lang: state.locale.lang
     };
@@ -89,11 +110,11 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        changeChecked: question => {
-            dispatch({ type: "CHANGE_CHECKED", question });
+        changeValue: (question, value) => {
+            dispatch({ type: "CHANGE_VALUE", question, value });
         },
-        changeDisabled: question => {
-            dispatch({ type: "CHANGE_DISABLED", question });
+        changeDisabled: (question, value) => {
+            dispatch({ type: "CHANGE_DISABLED", question, value });
         }
     };
 };

@@ -3,7 +3,7 @@ export default {
         'male':'Male gender',
         'male.description':'No Description',
 
-        'glycemia':'Admission hyperglycemia \u2265 180 mg/dL', 
+        'glycemia':'Admission hyperglycemia', 
         'glycemia.description':'The first measured capillary blood glucose on admission', 
 
         'aspects':'ASPECTS on admission (CT Scan)', 
@@ -51,14 +51,15 @@ export default {
             23. Complex atheroma in the ascending aorta or proximal arch`, 
 
         'result': 'Result',
+        'result.warning': 'Given some missing data, the likelihood may be underestimated',
         'result.alert':` <b>Alert - The Score is greater than or equal to 3 <br/><br/>
                                 High chance to Hemorrhagic Transformation (HT) within 7 days </b> <br/><br/>
-                                Sensibility: 74.7% <br/> 
-                                Specificity 76.5% <br/>
-                                Sensibility  (symptomatic cases of HT): 80% <br/>
-                                Specificity (symptomatic cases of HT): 77% <br/>
-                                OR (General HT): % <br/>
-                                OR (Symptomatic HT): % <br/>
+                                Sensibility: 73.7 (63.6-82.2)% <br/> 
+                                Specificity 76.5 (71.7-80.8)% <br/>
+                                Sensibility  (symptomatic cases of HT): 77 (62.2-88.5)% <br/>
+                                Specificity (symptomatic cases of HT): 76.7 (72-81)% <br/>
+                                OR (General HT): 9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
+                                OR (Symptomatic HT): 11.2 (95% CI, 5.30-23.6, p &lt; 0.001) <br/>
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
@@ -69,7 +70,7 @@ export default {
         'male':'Sexo Masculino',
         'male.description':'Sem descrição',
 
-        'glycemia':'Glicemia Admissional \u2265 180mg/dL',
+        'glycemia':'“Glicemia na admissão (mg/dL)”',
         'glycemia.description':'A primeira aferição de glicemia capilar na admissão hospitalar ',
 
         'aspects':'ASPECTS admissional',
@@ -116,14 +117,15 @@ export default {
             23. Ateroma complexo na aorta ascendente ou arco proximal `,
 
         'result': 'Resultado',
+        'result.warning': 'Considerando dado omisso, a probabilidade por estar subestimada',
         'result.alert':` <b>Alerta: Pontuação Total maior que 3 <br/><br/>
                                 Alta chance de transformação hemorrágica em 7 dias </b> <br/><br/>
-                                Sensibilidade: 74.7% <br/> 
-                                Especificidade 76.5% <br/>
-                                Sensibilidade para TH Sintomática: 80% <br/>
-                                Especificidade para TH Sintomática: 77% <br/>
-                                OR para TH Geral: % <br/>
-                                OR para TH sintomática: % <br/>
+                                Sensibilidade: 73.7 (63.6-82.2)% <br/> 
+                                Especificidade 76.5 (71.7-80.8)% <br/>
+                                Sensibilidade para TH Sintomática: 77 (62.2-88.5)% <br/>
+                                Especificidade para TH Sintomática: 76.7 (72-81)% <br/>
+                                OR para TH Geral: 9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
+                                OR para TH sintomática: 11.2 (95% CI, 5.30-23.6, p &lt; 0.001) <br/>
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
@@ -134,7 +136,7 @@ export default {
         'male':'Sexo Masculino',
         'male.description':'Sin descripción',
 
-        'glycemia':'Hiperglucemia de ingreso \u2265 180mg/dL',
+        'glycemia':'Hiperglucemia de ingreso',
         'glycemia.description':'La primera glucosa capilar en sangre medida al ingresso',
 
         'aspects':'ASPECTS al ingresso',
@@ -184,16 +186,17 @@ export default {
         `,
 
         'result': 'Resultado',
+        'result.warning': 'Dados algunos datos faltantes, el resultado puede ser subestimado',
         'result.alert': `
                 <b>Alerta: La puntuación es mayor o igual a 3 </b> <br/><br/>
                 <b>Alta probabilidad de transformación hemorrágica (TH) en 7 días </b> <br/><br/>
-                Sensibilidad: 74.7% <br/>
-                Especificidad: 76.5% <br/>
+                Sensibilidad: 73.7 (63.6-82.2)% <br/>
+                Especificidad: 76.5 (71.7-80.8)% <br/>
                 
-                Sensibilidad (los casos de TH sintomática): 80% <br/>
-                Especificidad (los casos de TH sintomática): 77% <br/>
-                OR (General TH): <br/>
-                OR (TH sintomática): `,
+                Sensibilidad (los casos de TH sintomática): 77 (62.2-88.5)% <br/>
+                Especificidad (los casos de TH sintomática): 76.7 (72-81)% <br/>
+                OR (General TH):9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
+                OR (TH sintomática): 11.2 (95% CI, 5.30-23.6, p &lt; 0.001)`,
         'total': 'Total',
         'odd': 'Odd ratio',
         'likelihood': 'Probabilidad (%)',

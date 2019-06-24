@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import logo from "../../assets/logo.png";
-import splash from "../../assets/splash.png";
 import { withRouter } from "react-router-dom";
 import "./HomePage.css";
 import NavBar from "../../components/NavBar/NavBar";
@@ -54,20 +53,6 @@ function HomePage(props) {
                     </div>
                 </div>
             </div>
-
-            {/* <div className="circle">
-                <div className="menu">
-                    <div className="row1">
-                        
-                    </div>
-                    <div className="row2">
-    
-                    </div>
-                    <div className="row3">
-                        <button className="button references">References</button>                            
-                    </div>                        
-                </div>
-            </div> */}
         </div>
     );
 }

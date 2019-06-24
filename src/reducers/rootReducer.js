@@ -1,31 +1,31 @@
 const initState = {
     answers:{
         male: {
-            checked: false,
+            value: 0,
             disabled: false,
         },
         glycemia:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
         aspects:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
         acm:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
         microangiopathy:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
         lacunar_syndrome:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
         aortic_insufficiency:{
-            checked: false,
+            value: 0,
             disabled: false,
         },
     },    
@@ -38,16 +38,16 @@ const initState = {
 }
 
 const rootReducer = (state = initState, action) => {
+    console.log(action)
     console.log(state);
-    console.log(action);
-    if(action.type==='CHANGE_CHECKED'){
+    if(action.type==='CHANGE_VALUE'){
         return({
             ...state,
             answers:{
                 ...state.answers,
                 [action.question]:{
                     ...state.answers[action.question],
-                    checked: !state.answers[action.question].checked,
+                    value: action.value,
                 }
             }            
         })
