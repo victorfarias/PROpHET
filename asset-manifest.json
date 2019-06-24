@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/PROpHET/static/css/main.227f5b18.chunk.css",
-    "main.js": "/PROpHET/static/js/main.5e3b3fb9.chunk.js",
-    "main.js.map": "/PROpHET/static/js/main.5e3b3fb9.chunk.js.map",
+    "main.css": "/PROpHET/static/css/main.3c5cc773.chunk.css",
+    "main.js": "/PROpHET/static/js/main.2dffa891.chunk.js",
+    "main.js.map": "/PROpHET/static/js/main.2dffa891.chunk.js.map",
     "runtime~main.js": "/PROpHET/static/js/runtime~main.3fda8091.js",
     "runtime~main.js.map": "/PROpHET/static/js/runtime~main.3fda8091.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/PROpHET/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.dc492f4a.chunk.js": "/PROpHET/static/js/2.dc492f4a.chunk.js",
-    "static/js/2.dc492f4a.chunk.js.map": "/PROpHET/static/js/2.dc492f4a.chunk.js.map",
+    "static/js/2.9aeecce5.chunk.js": "/PROpHET/static/js/2.9aeecce5.chunk.js",
+    "static/js/2.9aeecce5.chunk.js.map": "/PROpHET/static/js/2.9aeecce5.chunk.js.map",
     "index.html": "/PROpHET/index.html",
-    "precache-manifest.271038e43817b5ccf186253b10a6435c.js": "/PROpHET/precache-manifest.271038e43817b5ccf186253b10a6435c.js",
+    "precache-manifest.838fb3ef937faa7af9428249ca82e0fb.js": "/PROpHET/precache-manifest.838fb3ef937faa7af9428249ca82e0fb.js",
     "service-worker.js": "/PROpHET/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/PROpHET/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.227f5b18.chunk.css.map": "/PROpHET/static/css/main.227f5b18.chunk.css.map",
-    "static/media/brain.svg": "/PROpHET/static/media/brain.ec6748d4.svg",
-    "static/media/heart.svg": "/PROpHET/static/media/heart.c0be590a.svg",
-    "static/media/icecream.svg": "/PROpHET/static/media/icecream.04daed32.svg",
+    "static/css/main.3c5cc773.chunk.css.map": "/PROpHET/static/css/main.3c5cc773.chunk.css.map",
+    "static/media/acm.png": "/PROpHET/static/media/acm.aaf1e1fb.png",
+    "static/media/aspects.png": "/PROpHET/static/media/aspects.815e25ad.png",
+    "static/media/embolia.png": "/PROpHET/static/media/embolia.df5067ed.png",
+    "static/media/glycemia.png": "/PROpHET/static/media/glycemia.b3c708a5.png",
+    "static/media/lacunar.png": "/PROpHET/static/media/lacunar.1fcd6d1e.png",
+    "static/media/leukoaraiosis.png": "/PROpHET/static/media/leukoaraiosis.9118b784.png",
     "static/media/logo.png": "/PROpHET/static/media/logo.793ec6f2.png",
-    "static/media/man.svg": "/PROpHET/static/media/man.f8a97699.svg",
-    "static/media/mind.svg": "/PROpHET/static/media/mind.3bbab716.svg",
-    "static/media/splash.png": "/PROpHET/static/media/splash.c0493b08.png"
+    "static/media/male.png": "/PROpHET/static/media/male.2c5896c1.png"
   }
 }
