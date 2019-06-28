@@ -38,8 +38,6 @@ const initState = {
 }
 
 const rootReducer = (state = initState, action) => {
-    console.log(action)
-    console.log(state);
     if(action.type==='CHANGE_VALUE'){
         return({
             ...state,

@@ -28,7 +28,9 @@ class Question extends Component {
             changeValue,
             changeDisabled,
             lang,
-            number = false
+            number = false,
+            minRange = 0,
+            maxRange = 999,
         } = this.props;
         let classes = classNames({
             switch: true,
@@ -57,10 +59,12 @@ class Question extends Component {
                     {number && (
                         <input
                             type="number"
-                            inputmode="numeric"
-                            pattern="[0-9]*"
+                            // inputmode="numeric"
+                            // pattern="[0-9]*"
                             className="number-input"
-                            size="3"
+                            // size="3"
+                            max={maxRange}
+                            min={minRange}
                             required
                             disabled={disabled}
                             onChange={evt =>
@@ -72,7 +76,7 @@ class Question extends Component {
                         className="checkmark-container"
                         onChange={() => changeDisabled(question)}
                     >
-                        <span className="big">Não disponível</span>
+                        <span className="big">{messages[lang]['not_available']}</span>
                         <span className="small">N/A</span>
                         <input type="checkbox" defaultChecked={disabled} />
                         <span className="checkmark" />

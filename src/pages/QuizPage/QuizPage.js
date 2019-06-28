@@ -31,8 +31,8 @@ function QuizPage(props) {
             <form ref={form} onSubmit={e => e.preventDefault()} className="inner-quiz">
                 <div className="quiz">
                     <Question question="male" src={male} />
-                    <Question question="glycemia" src={glycemia} number />
-                    <Question question="aspects" src={aspects} number/>
+                    <Question question="glycemia" src={glycemia} minRange="1" maxRange="999" number />
+                    <Question question="aspects" src={aspects} minRange="1" maxRange="10" number/>
                     <Question question="acm" src={acm} />
                     <Question question="microangiopathy" src={leukoaraiosis} />
                     <Question question="lacunar_syndrome" src={lacunar} />

@@ -76,48 +76,48 @@ const mapStateToProps = state => {
     let score =
         1 * questions_score.male +
         1 * (questions_score.glycemia >= 180 ? 1 : 0) +
-        2 * (questions_score.aspects >= 7 ? 1 : 0) +
+        2 * (questions_score.aspects <= 7 ? 1 : 0) +
         1 * questions_score.acm +
         1 * questions_score.microangiopathy -
         3 * questions_score.lacunar_syndrome +
         1 * questions_score.aortic_insufficiency;
-    console.log(score);
+    let or = 0.
     switch (score) {
         case -3:
-            score = 0.
+            or = 0.
             break;
         case -2:
-            score = 0.
+            or = 0.
             break;
         case -1:
-            score = 0.
+            or = 0.
             break;
         case 0:
-            score = 0.09
+            or = 0.09
             break;
         case 1:
-            score = 0.27
+            or = 0.27
             break;
         case 2:
-            score = 0.79
+            or = 0.79
             break;
         case 3:
-            score = 2.27
+            or = 2.27
             break;
         case 4:
-            score = 3.3
+            or = 3.3
             break;
         case 5:
-            score = 6.9
+            or = 6.9
             break;
         case 6:
-            score = 6.9 
+            or = 6.9 
             break;
         case 7:
-            score = 6.9 
+            or = 6.9 
             break;
         default:
-            score = 0.
+            or = 0.
     }
 
     let questions_prob = state.questions.reduce((obj, question) => {
@@ -143,7 +143,7 @@ const mapStateToProps = state => {
     return {
         probability,
         score,
-        odds: (score + 2) * 1.38,
+        odds: or,
         hasDisabled
     };
 };

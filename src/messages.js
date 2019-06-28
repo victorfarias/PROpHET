@@ -3,7 +3,7 @@ export default {
         'male':'Male gender',
         'male.description':'No Description',
 
-        'glycemia':'Admission hyperglycemia', 
+        'glycemia':'Blood glucose on admission (mg/dL)', 
         'glycemia.description':'The first measured capillary blood glucose on admission', 
 
         'aspects':'ASPECTS on admission (CT Scan)', 
@@ -13,7 +13,7 @@ export default {
         'acm.description':'No Description',
 
         'microangiopathy':'Leukoaraiosis', 
-        'microangiopathy.description':'FAZEKAS grade (Fazekas, 1987) 1 to 3 were considered as leukoaraiosis', 
+        'microangiopathy.description':'FAZEKAS grade (Fazekas, 1987) 1-6 wasconsidered as leukoaraiosis', 
 
         'lacunar_syndrome':'Lacunar syndrome', 
         'lacunar_syndrome.description':'Defined based on The Oxfordshire Community Stroke Project classification system (Bamford, 1991): pure motor OR pure sensory OR sensorimotor symptoms OR ataxic hemiparesis OR clumsy-hand dysarthria', 
@@ -51,9 +51,9 @@ export default {
             23. Complex atheroma in the ascending aorta or proximal arch`, 
 
         'result': 'Result',
-        'result.warning': 'Given some missing data, the likelihood may be underestimated',
+        'result.warning': 'Given some missing data, the likelihood may be misestimated',
         'result.alert':` <b>Alert - The Score is greater than or equal to 3 <br/><br/>
-                                High chance to Hemorrhagic Transformation (HT) within 7 days </b> <br/><br/>
+                                Increased chance of Hemorrhagic Transformation (HT) within 7 days </b> <br/><br/>
                                 Sensibility: 73.7 (63.6-82.2)% <br/> 
                                 Specificity 76.5 (71.7-80.8)% <br/>
                                 Sensibility  (symptomatic cases of HT): 77 (62.2-88.5)% <br/>
@@ -65,12 +65,13 @@ export default {
         'odd': 'Odd ratio',
         'likelihood': 'Likelihood (%)',
         'evaluate':'Evaluate',
+        'not_available':'Not Available',
     },
     pt:{
         'male':'Sexo Masculino',
         'male.description':'Sem descrição',
 
-        'glycemia':'“Glicemia na admissão (mg/dL)”',
+        'glycemia':'Glicemia na admissão (mg/dL)',
         'glycemia.description':'A primeira aferição de glicemia capilar na admissão hospitalar ',
 
         'aspects':'ASPECTS admissional',
@@ -80,7 +81,7 @@ export default {
         'acm.description':'Sem descrição',
 
         'microangiopathy':'Microangiopatia',
-        'microangiopathy.description':'Graus 1 a 3 na classificação de Fazekas (Fazekas, 1987) foram consideradas como presença de microangiopatia ',
+        'microangiopathy.description':'Graus 1 a 6 na classificação de Fazekas (Fazekas, 1987) foram consideradas como presença de microangiopatia ',
 
         'lacunar_syndrome':'Síndrome Lacunar',
         'lacunar_syndrome.description':'Definida de acordo com o The Oxfordshire Community Stroke Project classification system (Bamford, 1991): sintoma motor puro OU sensitivo puro OU sensitivo-motor OU hemiparesia atáxica OU disartria clumsy-hand ',
@@ -131,12 +132,13 @@ export default {
         'odd': 'Odd ratio',
         'likelihood': 'Probabilidade (%)',
         'evaluate':'Avaliar',
+        'not_available':'Não disponível',
     },
     es:{
         'male':'Sexo Masculino',
         'male.description':'Sin descripción',
 
-        'glycemia':'Hiperglucemia de ingreso',
+        'glycemia':'Glicemia al ingreso (mg/dL)',
         'glycemia.description':'La primera glucosa capilar en sangre medida al ingresso',
 
         'aspects':'ASPECTS al ingresso',
@@ -146,7 +148,7 @@ export default {
         'acm.description':'Sin descripción',
 
         'microangiopathy':'Leucoaraiosis',
-        'microangiopathy.description':'Los grados 1 a 3 en la clasificación de Fazekas (Fazekas, 1987) fueron considerados como presencia de microangiopatia',
+        'microangiopathy.description':'Los grados 1 a 6 en la clasificación de Fazekas (Fazekas, 1987) fueron considerados como presencia de microangiopatia',
 
         'lacunar_syndrome':'Síndrome lacunar',
         'lacunar_syndrome.description':'Definido según el “The Oxfordshire Community Stroke Project classification system” (Bamford, 1991): síntomas puramente motores O sensoriales O sensoriomotores puros O hemiparesia atáxica O disartria “clumsy-hand”.',
@@ -201,6 +203,6 @@ export default {
         'odd': 'Odd ratio',
         'likelihood': 'Probabilidad (%)',
         'evaluate':'Evaluar',
+        'not_available':'No disponible',
     }
-
 }
