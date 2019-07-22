@@ -80,7 +80,7 @@ class ResultPage extends Component {
                                 <FormattedHTMLMessage id="result.warning" />
                             </div>
                         )}
-                        {score >= -3 && (
+                        {score >= 3 && (
                             <div className="alert">
                                 <FormattedHTMLMessage id="result.alert" />{" "}
                                 <br />
