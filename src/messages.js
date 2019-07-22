@@ -63,7 +63,7 @@ export default {
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
-        'likelihood': 'Likelihood (%)',
+        'likelihood': 'Probability of hemorrhagic transformation (%)',
         'evaluate':'Evaluate',
         'not_available':'Not Available',
     },
@@ -77,7 +77,7 @@ export default {
         'aspects':'ASPECTS admissional',
         'aspects.description':'Aferido pela primeira tomografia computadorizada de encéfalo na admissão hospitalar. Ausência de hipodensidade deve ter score de 10',
         
-        'acm':'Sinal de ACM hiperdensa',
+        'acm':'Sinal da ACM hiperdensa',
         'acm.description':'Sem descrição',
 
         'microangiopathy':'Microangiopatia',
@@ -130,7 +130,7 @@ export default {
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
-        'likelihood': 'Probabilidade (%)',
+        'likelihood': 'Probabilidade de Transformação Hemorrágica (%)',
         'evaluate':'Avaliar',
         'not_available':'Não disponível',
     },
@@ -201,7 +201,7 @@ export default {
                 OR (TH sintomática): 11.2 (95% CI, 5.30-23.6, p &lt; 0.001)`,
         'total': 'Total',
         'odd': 'Odd ratio',
-        'likelihood': 'Probabilidad (%)',
+        'likelihood': 'Probabilidad de transformación hemorrágica (%)',
         'evaluate':'Evaluar',
         'not_available':'No disponible',
     }

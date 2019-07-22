@@ -4,8 +4,36 @@ import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 import "./ResultPage.css";
 import NavBar from "../../components/NavBar/NavBar";
 import { Link } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
+import portuguese from "../../assets/Portugues.png";
+import english from "../../assets/English.png";
+import spanish from "../../assets/Spanish.png";
 
 class ResultPage extends Component {
+    constructor(props, context) {
+        
+        super(props, context);
+        let table = null;
+        if(props.lang == 'en'){
+            table = english;
+        }else if(props.lang == 'pt'){
+            table = portuguese;
+        }else{
+            table = spanish;
+        }
+
+        this.state = {
+            showModal: false,
+            table,
+        };
+    }
+    openModal = event => {
+        event.preventDefault();
+        this.setState({ showModal: true });
+    };
+    closeModal = () => {
+        this.setState({ showModal: false });
+    };
     render() {
         const { probability, score, odds, hasDisabled } = this.props;
         return (
@@ -16,7 +44,7 @@ class ResultPage extends Component {
                         <div className="panel large centralized my-5">
                             <FormattedMessage id="result" />
                         </div>
-                        <div className="result-item my-5">
+                        {/* <div className="result-item my-5">
                             <div className="panel large">
                                 <FormattedMessage id="total" />
                             </div>
@@ -29,7 +57,7 @@ class ResultPage extends Component {
                             <div className="result-value">
                                 {odds.toFixed(2)}
                             </div>
-                        </div>
+                        </div> */}
                         <div className="result-item my-5">
                             <div className="panel large green">
                                 <FormattedMessage id="likelihood" />
@@ -38,14 +66,57 @@ class ResultPage extends Component {
                                 {(probability * 100).toFixed(0)}%
                             </div>
                         </div>
+                        <div className="alert alert-success">
+                            <b>Information:</b> <br />
+                            Accuracy 81.3% <br />
+                            Area Under Curve (AUC) 0.84 (0.79-0.88) <br />
+                            Sensibility 33% <br />
+                            Specificity 94% <br />
+                            Brier score 0.1 <br />
+                            Hosmer-Lemeshow 0.45 <br />
+                        </div>
                         {hasDisabled && (
                             <div className="alert warning">
                                 <FormattedHTMLMessage id="result.warning" />
                             </div>
-                        )}                        
-                        {score >= 3 && (
+                        )}
+                        {score >= -3 && (
                             <div className="alert">
-                                <FormattedHTMLMessage id="result.alert" />
+                                <FormattedHTMLMessage id="result.alert" />{" "}
+                                <br />
+                                <Button
+                                    variant="info"
+                                    className="px-5"
+                                    onClick={this.openModal}
+                                >
+                                    Info
+                                </Button>
+                                <Modal
+                                    size="lg"
+                                    show={this.state.showModal}
+                                    onHide={this.closeModal}
+                                >
+                                    <Modal.Header closeButton>
+                                        <Modal.Title>                                            
+                                        </Modal.Title>
+                                    </Modal.Header>
+
+                                    <Modal.Body>
+                                        <img
+                                            className="table"
+                                            src={this.state.table}
+                                            alt=""
+                                        />
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <Button
+                                            variant="secondary"
+                                            onClick={this.closeModal}
+                                        >
+                                            Close
+                                        </Button>
+                                    </Modal.Footer>
+                                </Modal>
                             </div>
                         )}
                         <Link
@@ -81,43 +152,43 @@ const mapStateToProps = state => {
         1 * questions_score.microangiopathy -
         3 * questions_score.lacunar_syndrome +
         1 * questions_score.aortic_insufficiency;
-    let or = 0.
+    let or = 0;
     switch (score) {
         case -3:
-            or = 0.
+            or = 0;
             break;
         case -2:
-            or = 0.
+            or = 0;
             break;
         case -1:
-            or = 0.
+            or = 0;
             break;
         case 0:
-            or = 0.09
+            or = 0.09;
             break;
         case 1:
-            or = 0.27
+            or = 0.27;
             break;
         case 2:
-            or = 0.79
+            or = 0.79;
             break;
         case 3:
-            or = 2.27
+            or = 2.27;
             break;
         case 4:
-            or = 3.3
+            or = 3.3;
             break;
         case 5:
-            or = 6.9
+            or = 6.9;
             break;
         case 6:
-            or = 6.9 
+            or = 6.9;
             break;
         case 7:
-            or = 6.9 
+            or = 6.9;
             break;
         default:
-            or = 0.
+            or = 0;
     }
 
     let questions_prob = state.questions.reduce((obj, question) => {
@@ -138,13 +209,14 @@ const mapStateToProps = state => {
         2.193 * questions_prob.lacunar_syndrome +
         1.066 * questions_prob.aortic_insufficiency;
     let probability = 1 / (1 + Math.pow(Math.E, -g));
-    console.log(questions_score)
+    console.log(questions_score);
     console.log(questions_prob);
     return {
         probability,
         score,
         odds: or,
-        hasDisabled
+        hasDisabled,
+        lang: state.locale.lang
     };
 };
 export default connect(mapStateToProps)(ResultPage);

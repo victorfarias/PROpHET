@@ -21,7 +21,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    height: 50px;
+    /* height: 50px; */
     box-sizing: border-box;
     background: #fcce00;
     text-align: center;
@@ -35,7 +35,7 @@
 }
 
 .panel.green{
-    background: green;
+    background: #d4edda;
 }
 
 .panel.centralized{
@@ -79,4 +79,8 @@
     .result-value{
         width: 35%;
     }   
+}
+
+img.table{
+    width: 100%;
 }

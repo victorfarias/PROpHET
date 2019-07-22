@@ -33,18 +33,34 @@ class NavBar extends Component {
                         <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
                             <li
                                 className={
-                                    "nav-item " + ((activePage == "home") ? "active" : "")
+                                    "nav-item " +
+                                    (activePage == "home" ? "active" : "")
                                 }
                             >
                                 <Link className="nav-link" to="/">
                                     Home
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Link
-                                </a>
-                            </li>
+                            <li
+                                className={
+                                    "nav-item " +
+                                    (activePage == "about" ? "active" : "")
+                                }
+                            >
+                                <Link className="nav-link" to="/about">
+                                    About
+                                </Link>
+                            </li>    
+                            <li
+                                className={
+                                    "nav-item " +
+                                    (activePage == "disclaimer" ? "active" : "")
+                                }
+                            >
+                                <Link className="nav-link" to="/disclaimer">
+                                    Disclaimer
+                                </Link>
+                            </li>        
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
                                     Publications

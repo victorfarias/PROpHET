@@ -1,0 +1,48 @@
+.logo-container{
+    float: left;
+    width: 45%;
+}
+
+.logo-container img{
+    display: block;
+    margin: auto;
+    margin-top: 100px;    
+}
+
+.text{    
+    float: left;
+    width: 55%;
+    text-align: justify;
+}
+
+.text span{
+    display: block;
+    font-size: 18px;
+}
+
+
+.text b{
+    display: block;
+    text-align: center;
+}
+
+.text h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .logo-container{
+        display: none;
+    }
+    
+    .logo-container img{
+        display: block;
+        margin: auto;
+        margin-top: 100px;    
+    }
+    
+    .text{    
+        /* float: left; */
+        width: 100%;
+    }
+}

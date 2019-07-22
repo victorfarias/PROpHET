@@ -2,7 +2,7 @@
   "name": "prophet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://victorfarias.github.io/PROpHET",
+  "homepage": "http://score-prophet.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
