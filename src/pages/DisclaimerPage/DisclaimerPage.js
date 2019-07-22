@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 
 function DisclaimerPage(props) {
     return (
-        <div className="about-container">
+        <div className="disclaimer-container">
             <NavBar activePage="disclaimer" />
             <div className="container">
                 <div className="logo-container">

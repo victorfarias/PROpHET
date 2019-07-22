@@ -14,7 +14,7 @@ function AboutPage(props){
                 </div>
                 <div className="text">
                     <h1 className="my-5">About</h1>
-                    <span className="py-4">Application developed by Victor Farias and Joao Brainer Clares de Andrade</span>
+                    <span className="py-4">Application developed by Victor Aguiar Evangelista de Farias and Joao Brainer Clares de Andrade</span>
                     <span className="py-2">In association with Hospital Geral de Fortaleza (Brazil) 
                     and Universidade Federal de Sao Paulo (Brazil) </span>
 

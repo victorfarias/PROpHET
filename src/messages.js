@@ -54,12 +54,13 @@ export default {
         'result.warning': 'Given some missing data, the likelihood may be misestimated',
         'result.alert':` <b>Alert - The Score is greater than or equal to 3 <br/><br/>
                                 Increased chance of Hemorrhagic Transformation (HT) within 7 days </b> <br/><br/>
-                                Sensibility: 73.7 (63.6-82.2)% <br/> 
-                                Specificity 76.5 (71.7-80.8)% <br/>
-                                Sensibility  (symptomatic cases of HT): 77 (62.2-88.5)% <br/>
-                                Specificity (symptomatic cases of HT): 76.7 (72-81)% <br/>
-                                OR (General HT): 9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
-                                OR (Symptomatic HT): 11.2 (95% CI, 5.30-23.6, p &lt; 0.001) <br/>
+                                Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                                Sensibility: 78 (68-86)% <br/> 
+                                Specificity 75 (70-79)% <br/>
+                                Sensibility  (symptomatic cases of HT): 78 (62.2-89.4)% <br/>
+                                Specificity (symptomatic cases of HT): 75 (70-80)% <br/>
+                                OR (General HT): 10.6 (95% CI 6-18.6, p &lt; 0.001) <br/>
+                                OR (Symptomatic HT): 10.7 (95% CI, 4.9-23.3, p &lt; 0.001) <br/>
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
@@ -121,12 +122,13 @@ export default {
         'result.warning': 'Considerando dado omisso, a probabilidade por estar subestimada',
         'result.alert':` <b>Alerta: Pontuação Total maior que 3 <br/><br/>
                                 Alta chance de transformação hemorrágica em 7 dias </b> <br/><br/>
-                                Sensibilidade: 73.7 (63.6-82.2)% <br/> 
-                                Especificidade 76.5 (71.7-80.8)% <br/>
-                                Sensibilidade para TH Sintomática: 77 (62.2-88.5)% <br/>
-                                Especificidade para TH Sintomática: 76.7 (72-81)% <br/>
-                                OR para TH Geral: 9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
-                                OR para TH sintomática: 11.2 (95% CI, 5.30-23.6, p &lt; 0.001) <br/>
+                                Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                                Sensibilidade: 78 (68-86)% <br/> 
+                                Especificidade 75 (70-79)% <br/>
+                                Sensibilidade para TH Sintomática: 78 (62.2-89.4)% <br/>
+                                Especificidade para TH Sintomática: 75 (70-80)% <br/>
+                                OR para TH Geral: 10.6 (95% CI 6-18.6, p &lt; 0.001) <br/>
+                                OR para TH sintomática: 10.7 (95% CI, 4.9-23.3, p &lt; 0.001) <br/>
                                 `,
         'total': 'Total',
         'odd': 'Odd ratio',
@@ -192,13 +194,14 @@ export default {
         'result.alert': `
                 <b>Alerta: La puntuación es mayor o igual a 3 </b> <br/><br/>
                 <b>Alta probabilidad de transformación hemorrágica (TH) en 7 días </b> <br/><br/>
-                Sensibilidad: 73.7 (63.6-82.2)% <br/>
-                Especificidad: 76.5 (71.7-80.8)% <br/>
+                Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                Sensibilidad: 78 (68-86)% <br/>
+                Especificidad: 75 (70-79)% <br/>
                 
-                Sensibilidad (los casos de TH sintomática): 77 (62.2-88.5)% <br/>
-                Especificidad (los casos de TH sintomática): 76.7 (72-81)% <br/>
-                OR (General TH):9.10 (95% CI 5.44-15.30, p &lt; 0.001) <br/>
-                OR (TH sintomática): 11.2 (95% CI, 5.30-23.6, p &lt; 0.001)`,
+                Sensibilidad (los casos de TH sintomática): 78 (62.2-89.4)% <br/>
+                Especificidad (los casos de TH sintomática): 75 (70-80)% <br/>
+                OR (General TH): 10.6 (95% CI 6-18.6, p &lt; 0.001) <br/>
+                OR (TH sintomática): 10.7 (95% CI, 4.9-23.3, p &lt; 0.001)`,
         'total': 'Total',
         'odd': 'Odd ratio',
         'likelihood': 'Probabilidad de transformación hemorrágica (%)',
