@@ -17,8 +17,9 @@ function DisclaimerPage(props) {
                         This application is made available by Universidade
                         Federal de Sao Paulo (Brazil) and Hospital Geral de
                         Fortaleza (Brazil), in collaboration with staff of
-                        Universidade Federal do Ceara (Brazil) and Columbia
-                        University (USA), solely for personal non-commercial,
+                        Universidade Federal do Ceara (Brazil)  
+                         {/* and Columbia University (USA),  */} 
+                         solely for personal non-commercial,
                         teaching and educational use. This application is not a
                         medical device and does not and should not be construed
                         to provide health-related or medical advice, or clinical

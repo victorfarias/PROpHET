@@ -66,11 +66,11 @@ class ResultPage extends Component {
                                 {(probability * 100).toFixed(0)}%
                             </div>
                         </div>
-                        <div className="alert alert-success">
+                        <div className="alert alert-success green-font">
                             <b>Information:</b> <br />
                             Accuracy 81.3% <br />
                             Area Under Curve (AUC) 0.84 (0.79-0.88) <br />
-                            Sensibility 33% <br />
+                            {/* Sensibility 33% <br /> */}
                             Specificity 94% <br />
                             Brier score 0.1 <br />
                             Hosmer-Lemeshow 0.45 <br />

@@ -121,7 +121,7 @@ export default {
         'result': 'Resultado',
         'result.warning': 'Considerando dado omisso, a probabilidade por estar subestimada',
         'result.alert':` <b>Alerta: Pontuação Total maior que 3 <br/><br/>
-                                Alta chance de transformação hemorrágica em 7 dias </b> <br/><br/>
+                                Maior chance de transformação hemorrágica em 7 dias </b> <br/><br/>
                                 Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
                                 Sensibilidade: 78 (68-86)% <br/> 
                                 Especificidade 75 (70-79)% <br/>
