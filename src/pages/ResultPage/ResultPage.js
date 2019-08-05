@@ -80,8 +80,8 @@ class ResultPage extends Component {
                                 <FormattedHTMLMessage id="result.warning" />
                             </div>
                         )}
-                        {score >= 3 && (
-                            <div className="alert">
+                        {score >= -10 && (
+                            <div className="alert alert-danger">
                                 <FormattedHTMLMessage id="result.alert" />{" "}
                                 <br />
                                 <Button
@@ -102,6 +102,10 @@ class ResultPage extends Component {
                                     </Modal.Header>
 
                                     <Modal.Body>
+                                    <div class="alert alert-secondary" role="alert">
+                                        <FormattedHTMLMessage id="result.alert-modal" />
+                                    </div>
+                                        
                                         <img
                                             className="table"
                                             src={this.state.table}
