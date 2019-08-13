@@ -23,10 +23,12 @@
 .evaluate{
     cursor: pointer;
     background-color: rgb(77, 216, 77);
+    outline: none;
+    border: none;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     color: black;
-    border-radius: 20px;
-    box-shadow: 4px 4px 4px;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 2px; */
 }

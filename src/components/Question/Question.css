@@ -21,7 +21,8 @@
     width: 200px;
     padding: 13px 0px;
     margin-right: 50px;
-    box-shadow: 5px 5px 5px;
+    /* box-shadow: 5px 5px 5px; */
+    border-radius: 7px;
     cursor: pointer;
 }
 
