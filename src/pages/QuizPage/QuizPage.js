@@ -37,6 +37,9 @@ function QuizPage(props) {
                     <Question question="microangiopathy" src={leukoaraiosis} />
                     <Question question="lacunar_syndrome" src={lacunar} />
                     <Question question="aortic_insufficiency" src={embolia} />
+                    
+                    <FormattedMessage id="quiz.click"></FormattedMessage>
+                    
                     <input
                         type="submit"
                         className="evaluate my-5"

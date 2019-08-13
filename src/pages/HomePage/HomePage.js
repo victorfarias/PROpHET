@@ -48,7 +48,7 @@ function HomePage(props) {
                             }}
                             className="btn btn-success btn-lg btn-block my-2"
                         >
-                            Españhol
+                            Español
                         </button>
                     </div>
                 </div>

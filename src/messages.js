@@ -48,13 +48,15 @@ export default {
             20. Atrial septal aneurysm and patent foramen ovale <br/>
             21. Left ventricular aneurysm without thrombus <br/>
             22. Isolated left atrial smoke (no mitral stenosis or atrial fibrillation) <br/>
-            23. Complex atheroma in the ascending aorta or proximal arch`, 
+            23. Complex atheroma in the ascending aorta or proximal arch`,             
+        'quiz.click':'*Click on the boxes for more information',
 
         'result': 'Result',
         'result.warning': 'Given some missing data, the likelihood may be misestimated',
         'result.alert':` <b>Alert - The Score is greater than or equal to 3 <br/><br/>
                                 Increased chance of Hemorrhagic Transformation (HT) within 7 days </b> <br/>`,
         'result.alert-modal': `Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                                Hosmer-Lemeshow 0.86 <br/>
                                 Sensibility: 78 (68-86)% <br/> 
                                 Specificity 75 (70-79)% <br/>
                                 Sensibility  (symptomatic cases of HT): 78 (62.2-89.4)% <br/>
@@ -116,12 +118,14 @@ export default {
             21. Aneurisma de ventrículo esquerdo sem trombo </br>
             22. Sombra isolada no átrio esquerdo (sem estenose mitral ou fibrilação atrial) </br>
             23. Ateroma complexo na aorta ascendente ou arco proximal `,
+        'quiz.click': '*Clique nas caixas para mais informações',
 
         'result': 'Resultado',
         'result.warning': 'Considerando dado omisso, a probabilidade por estar subestimada',
         'result.alert':` <b>Alerta: Pontuação Total maior que 3 <br/><br/>
                                 Maior chance de transformação hemorrágica em 7 dias </b> <br/>`,
         'result.alert-modal': ` Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                                Hosmer-Lemeshow 0.86 <br/>
                                 Sensibilidade: 78 (68-86)% <br/> 
                                 Especificidade 75 (70-79)% <br/>
                                 Sensibilidade para TH Sintomática: 78 (62.2-89.4)% <br/>
@@ -141,10 +145,10 @@ export default {
         'glycemia':'Glicemia al ingreso (mg/dL)',
         'glycemia.description':'La primera glucosa capilar en sangre medida al ingresso',
 
-        'aspects':'ASPECTS al ingresso',
+        'aspects':'ASPECTS al ingreso',
         'aspects.description':'Medido por la primera tomografía computarizada cerebral al ingreso. Lesiones no evidentes se deben considerar como “ASPECTS 10”',
 
-        'acm':'Sinal de ACM hiperdensa',
+        'acm':'Señal de ACM hiperdensa',
         'acm.description':'Sin descripción',
 
         'microangiopathy':'Leucoaraiosis',
@@ -186,6 +190,7 @@ export default {
                 22.  Contraste ecocardiográfico espontáneo auricular izquierdo aislado (sin estenosis mitral ni fibrilación auricular) <br/>
                 23.  Ateroma complicado en la aorta ascendente o en el arco aórtico proximal <br/>
         `,
+        'quiz.click':'*Haga clic en los cuadros para más información',
 
         'result': 'Resultado',
         'result.warning': 'Dados algunos datos faltantes, el resultado puede ser subestimado',
@@ -193,6 +198,7 @@ export default {
                 <b>Alerta: La puntuación es mayor o igual a 3 </b> <br/><br/>
                 <b>Alta probabilidad de transformación hemorrágica (TH) en 7 días </b> <br/>`,
         'result.alert-modal': `Area Under Curve (AUC) 0.82 (0.78-0.86) <br/>
+                Hosmer-Lemeshow 0.86 <br/>
                 Sensibilidad: 78 (68-86)% <br/>
                 Especificidad: 75 (70-79)% <br/>                
                 Sensibilidad (los casos de TH sintomática): 78 (62.2-89.4)% <br/>
