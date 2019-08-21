@@ -20,7 +20,7 @@ function AboutPage(props){
                     <b className="py-2">This project is financed in part by the Coordenação de Aperfeiçoamento de Pessoal de
                     Nível Superior - Brasil (CAPES) - Finance Code 001 / 88881.189495/2018-01</b>
                     <img src={capes} alt=""/>
-                    <span className="py-4">Acknowledgement Gisele Sampaio Silva, Jay P Mohr, Fabricio Oliveira Lima, Joao Jose Carvalho, Pedro Braga Neto, Camila Rodrigues Nepomuceno, Levi Coelho Maia, Leonardo Barreira Portela, Flavio Rezende Moura Filho, Natalia Buitrago, Caroline Pinho and Nursing staff (Stroke Unit, Hospital Geral de Fortaleza)</span>
+                    <span className="py-4">Acknowledgements Gisele Sampaio Silva, Jay P Mohr, Fabricio Oliveira Lima, Joao Jose Carvalho, Pedro Braga Neto, Camila Rodrigues Nepomuceno, Levi Coelho Maia, Leonardo Barreira Portela, Flavio Rezende Moura Filho, Natalia Buitrago, Caroline Pinho and Nursing staff (Stroke Unit, Hospital Geral de Fortaleza)</span>
                 </div>
             </div>            
         </div>

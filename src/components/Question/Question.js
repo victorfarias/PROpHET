@@ -91,7 +91,7 @@ class Question extends Component {
                         <Modal.Title>{messages[lang][question]}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <FormattedHTMLMessage id={question + ".description"} />
+                        <FormattedHTMLMessage id={question + ".description"} />                        
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.closeModal}>
