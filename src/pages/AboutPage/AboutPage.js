@@ -15,7 +15,7 @@ function AboutPage(props){
                 <div className="text">
                     <h1 className="my-5">About</h1>
                     <span className="py-4">Application developed by Victor Aguiar Evangelista de Farias and Joao Brainer Clares de Andrade</span>
-                    <span className="py-2">In association with Hospital Geral de Fortaleza (Brazil) and Universidade Federal de São Paulo (Brazil) </span>
+                    {/* <span className="py-2">In association with Hospital Geral de Fortaleza (Brazil) and Universidade Federal de São Paulo (Brazil) </span> */}
 
                     <b className="py-2">This project is financed in part by the Coordenação de Aperfeiçoamento de Pessoal de
                     Nível Superior - Brasil (CAPES) - Finance Code 001 / 88881.189495/2018-01</b>
