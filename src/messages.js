@@ -16,7 +16,7 @@ export default {
         'microangiopathy.description':'<a href="https://www.ncbi.nlm.nih.gov/pubmed/3496763">FAZEKAS grade (from 1 to 6) (Fazekas, 1987) </a> was considered as leukoaraiosis', 
 
         'lacunar_syndrome':'Lacunar syndrome', 
-        'lacunar_syndrome.description':'Defined based on The Oxfordshire Community Stroke Project classification system <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: pure motor OR pure sensory OR sensorimotor symptoms OR ataxic hemiparesis OR clumsy-hand dysarthria', 
+        'lacunar_syndrome.description':'Defined based on The Oxfordshire Community Stroke Project classification system <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: pure motor OR pure sensory OR sensorimotor symptoms OR ataxic hemiparesis OR clumsy-hand dysarthria <br/> <b>Visit our computerized version of The Oxfordshire Community Stroke Project classification system at  <a href="http://www.compact-stroke.com">www.compact-stroke.com</a> </b> ',        
 
         'aortic_insufficiency':'Cardio-aortic embolism',
         'aortic_insufficiency.description':`We attested the stroke mechanism Cardio-aortic embolism from <a href="https://www.ncbi.nlm.nih.gov/pubmed/16240340">SSS-TOAST</a>, an evidence-based system. In our score, we considered all the levels of evidence described in the system. <br/><br/>
@@ -86,7 +86,7 @@ export default {
         'microangiopathy.description':'<a href="https://www.ncbi.nlm.nih.gov/pubmed/3496763">Graus 1 a 6 na classificação de Fazekas (Fazekas, 1987)</a> foram consideradas como presença de microangiopatia ',
 
         'lacunar_syndrome':'Síndrome Lacunar',
-        'lacunar_syndrome.description':'Definida de acordo com o The Oxfordshire Community Stroke Project classification system <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: sintoma motor puro OU sensitivo puro OU sensitivo-motor OU hemiparesia atáxica OU disartria clumsy-hand ',
+        'lacunar_syndrome.description':'Definida de acordo com o The Oxfordshire Community Stroke Project classification system <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: sintoma motor puro OU sensitivo puro OU sensitivo-motor OU hemiparesia atáxica OU disartria clumsy-hand. <br/> <b>Visite nosso sistema automatizado de classificação do The Oxfordshire Community Stroke Project classification system em <a href="http://www.compact-stroke.com">www.compact-stroke.com</a> (disponivel apenas em Inglês) </b>',
 
         'aortic_insufficiency':'Etiologia Cárdio-aórtica',
         'aortic_insufficiency.description':`Foi classificado como mecanismo etiológico cardio-aórtico segundo os critérios propostos no sistema de classificação <a href="https://www.ncbi.nlm.nih.gov/pubmed/16240340">SSS-TOAST</a>. Todos os níveis de confiança foram considerados.</a> <br/><br/>
@@ -155,7 +155,7 @@ export default {
         'microangiopathy.description':'<a href="https://www.ncbi.nlm.nih.gov/pubmed/3496763">Los grados 1 a 6 en la clasificación de Fazekas (Fazekas, 1987)</a> fueron considerados como presencia de microangiopatia',
 
         'lacunar_syndrome':'Síndrome lacunar',
-        'lacunar_syndrome.description':'Definido según el “The Oxfordshire Community Stroke Project classification system” <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: síntomas puramente motores O sensoriales O sensoriomotores puros O hemiparesia atáxica O disartria “clumsy-hand”.',
+        'lacunar_syndrome.description':'Definido según el “The Oxfordshire Community Stroke Project classification system” <a href="https://www.ncbi.nlm.nih.gov/pubmed/1675378">(Bamford, 1991)</a>: síntomas puramente motores O sensoriales O sensoriomotores puros O hemiparesia atáxica O disartria “clumsy-hand”. <br/> <b>Visite nuestro sistema automatizado de clasificación del Proyecto Oxfordshire Community Stroke en <a href="http://www.compact-stroke.com">www.compact-stroke.com</a> </b>',
 
         'aortic_insufficiency':'Embolismo cardio-aórtico',
         'aortic_insufficiency.description':`
