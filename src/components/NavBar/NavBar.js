@@ -61,11 +61,16 @@ class NavBar extends Component {
                                     Disclaimer
                                 </Link>
                             </li>        
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
+                            <li
+                                className={
+                                    "nav-item " +
+                                    (activePage == "publications" ? "active" : "")
+                                }
+                            >
+                                <Link className="nav-link" to="/publications">
                                     Publications
-                                </a>
-                            </li>
+                                </Link>
+                            </li>    
                         </ul>
                     </div>
                 </div>

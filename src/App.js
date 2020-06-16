@@ -8,6 +8,7 @@ import QuizPage from './pages/QuizPage/QuizPage'
 import ResultPage from './pages/ResultPage/ResultPage'
 import AboutPage from './pages/AboutPage/AboutPage';
 import DisclaimerPage from './pages/DisclaimerPage/DisclaimerPage';
+import PublicationsPage from './pages/PublicationsPage/PublicationsPage';
 
 function App(props) {
   const {lang} = props;
@@ -20,6 +21,7 @@ function App(props) {
           <Route path='/result' component={ResultPage} />
           <Route path='/about' component={AboutPage} />
           <Route path='/disclaimer' component={DisclaimerPage} />          
+          <Route path='/publications' component={PublicationsPage} />          
         </div>
       </IntlProvider>      
     </BrowserRouter>
