@@ -1,5 +1,10 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .disclaimer-container .logo-container{
-    float: left;
+    /* float: left; */
     width: 45%;
 }
 
@@ -11,7 +16,7 @@
 }
 
 .disclaimer-container .text{    
-    float: left;
+    /* float: left; */
     width: 55%;
     text-align: justify;
 }
@@ -46,4 +51,8 @@
         /* float: left; */
         width: 100%;
     }
+}
+
+.privacy-policy h1{
+    text-align: center;
 }
