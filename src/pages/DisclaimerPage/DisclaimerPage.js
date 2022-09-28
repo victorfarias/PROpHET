@@ -7,7 +7,7 @@ function DisclaimerPage(props) {
     return (
         <div className="disclaimer-container">
             <NavBar activePage="disclaimer" />
-            <div className="container">
+            <div className="container container-text">
                 <div className="logo-container">
                     <img src={logo} alt="" />
                 </div>
